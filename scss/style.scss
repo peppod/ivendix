@@ -4948,3 +4948,12 @@ h1.typed-text {
 .flex-control-nav {
     left:-10px;
 }
+
+.navbar-brand {
+    position: relative;
+    top: -5px;
+}
+
+.navbar-brand img {
+    width: 100px;
+}

@@ -194,5 +194,23 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+
+    $("#ambassadors-link").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#ambassadors"), 500, {easing:'easeInOutQuad', offset:-80});
+    });
+
+    $("#partners-link").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#peppod-partners"), 500, {easing:'easeInOutQuad', offset:-80});
+    });
+
+    $("#contacts-link").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#contacts"), 500, {easing:'easeInOutQuad', offset:-120});
+    });
 
 
+
+});

@@ -36,9 +36,6 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-
-
-
     </head>
     <body>
 
@@ -76,10 +73,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Sell Sheet</a></li>
-                        <li><a href="#">Ambassador</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a id="sell-sheet-link" href="#">Sell Sheet</a></li>
+                        <li><a id="ambassadors-link" href="#ambassadors">Ambassador</a></li>
+                        <li><a id="partners-link" href="#peppod-partners">Partners</a></li>
+                        <li><a id="contacts-link" href="#contacts">Contacts</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div><!--container-->
@@ -361,7 +358,7 @@
 
         <div class="divide85"></div>
 
-        <div class="wide-img-showcase">
+        <div id="contacts" class="wide-img-showcase">
 
             <div class="row margin-0 wide-img-showcase-row">
                 <div class="col-sm-6 no-padding img-2 wow animated fadeInLeft">
@@ -390,13 +387,13 @@
             </div>
         </div><!--wide image showcase end-->
 
-        <div class="testimonials-v-2 wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
+        <div id="ambassadors" class="testimonials-v-2 wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="center-heading">
                             <h2>PepPod Ambassadors</h2>
-
+                            <span class="center-line"></span>
                         </div>
                     </div>
                 </div><!--center heading end-->
@@ -442,7 +439,7 @@
         </div><!--testimonials v-2 end-->
         </div><!--full wide 2 columns content end-->
 
-        <div class="our-team-v-2">
+        <div id="peppod-partners" class="our-team-v-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -460,7 +457,7 @@
                     </div><!--person col end-->
                     <div class="col-sm-4 text-center">
                         <div class="person-v2">
-                            <img src="img/partners/backpacker.jpg" class="img-responsive" alt="">
+                            <img src="img/partners/backpacker.png" class="img-responsive" alt="">
                         </div>
                     </div><!--person col end-->
                     <div class="col-sm-4 text-center">
@@ -469,8 +466,8 @@
                         </div>
                     </div><!--person col end-->
                 </div>
-                <div class="row partners-second-row">
-                     <div class="col-sm-4 text-center col-md-offset-2">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
                         <div class="person-v2">
                             <img src="img/partners/warren-miller.png" class="img-responsive" alt="">
                         </div>
@@ -480,7 +477,67 @@
                             <img src="img/partners/outdoor-retailer.png" class="img-responsive" alt="">
                         </div>
                     </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/backwoods.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
                 </div>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/colorado-nutrition.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/the-feed.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/the-spot.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/confluence-kayaks.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/liberty-bottleworks.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/life-fuels.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/neptune.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/patagonia.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                    <div class="col-sm-4 text-center">
+                        <div class="person-v2">
+                            <img src="img/partners/promotiv.png" class="img-responsive" alt="">
+                        </div>
+                    </div><!--person col end-->
+                </div>
+
+
             </div>
         </div><!--our team v-2-->
 
@@ -523,6 +580,8 @@
         <script src="js/jquery.mb.YTPlayer.min.js" type="text/javascript"></script>        
         <!--customizable plugin edit according to your needs-->
         <script src="js/custom.js" type="text/javascript"></script>
+        <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+
 
         <!--revolution slider plugins-->
         <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>

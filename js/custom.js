@@ -98,7 +98,7 @@ $(document).ready(function () {
         itemsMobile: [479, 1],
         singleItem: false,
         startDragging: true,
-        autoPlay: 4000
+        autoPlay: 8000
     });
 
 });
@@ -145,11 +145,19 @@ $('.show-image').magnificPopup({type: 'image'});
  =============================================== */
 
 $(document).ready(function () {
-$('.main-flex-slider,.testi-slide').flexslider({
-    slideshowSpeed: 5000,
-    directionNav: false,
-    animation: "fade"
-});
+    $('.main-flex-slider').flexslider({
+        slideshowSpeed: 5000,
+        directionNav: false,
+        animation: "fade"
+    });
+
+    $('.testi-slide').flexslider({
+        slideshowSpeed: 10000,
+        directionNav: false,
+        animation: "slide"
+    });
+
+
 });
 //OWL CAROUSEL
 $(document).ready(function () {
